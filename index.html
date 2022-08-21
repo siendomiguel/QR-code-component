@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="./styles.css">
@@ -13,24 +15,16 @@
   <title>Frontend Mentor | QR code component</title>
 </head>
 <body>
-  <div class="container">
-    <div class="qr-container">
-
-      <div class="qr-img">
-        <img class="image" src="./images/image-qr-code.png" alt="qr code">
-      </div>
-      <div class="text-qr">
-        <p>your front-end skills by building projects</p>
-
-        <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
-
-      </div>
-      
+  <main>
+    <div class="qr-card">
+      <img class="image" src="./images/image-qr-code.png" alt="qr code">
+      <p id="title">your front-end skills by building projects</p>
+      <p id="description">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
     </div>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="https://github.com/siendomiguel/">Siendo Miguel</a>.
     </div>
-  </div>
+  </main>
 </body>
 </html>
