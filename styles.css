@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /*--- Colors ---*/
+--White: hsl(0, 0%, 100%);
+--Light-gray: hsl(212, 45%, 89%);
+--Grayish-blue: hsl(220, 15%, 55%);
+--Dark-blue: hsl(218, 44%, 22%);
+  /*--- font size ---*/
+--font-size: 15px;
+}
+
+.attribution { 
+  background-color: var(--Light-gray);
+  font-size: 11px; text-align: center;
+}
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  font-size: var(--font-size);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--Light-gray);
+}
+
+.qr-container {
+  background-color: var(--White);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  width: 320px;
+  border-radius: 15px;
+}
+
+.qr-img {
+  display: flex;
+  max-width: 325px;
+  overflow: hidden; /*Esto es para recortar la imagen con base en este contenedor padre en caso de ser necesario*/
+}
+
+.qr-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.text-qr {
+  text-align: center;
+  margin: 10px;
+}
+
+.text-qr :nth-child(1) {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.text-qr :nth-child(2) {
+  font-weight: 400;
+}
